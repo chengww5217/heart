@@ -30,7 +30,7 @@ let isPlaying = false
 audioSwitch.onclick = () => {
   isPlaying = !isPlaying
   backgroundAudioSwitch(audio, isPlaying)
-  audioSwitch.src = isPlaying ? './img/audio_on.svg' : './img/audio_off.svg'
+  audioSwitch.src = isPlaying ? 'https://files-cdn.pek3b.qingstor.com/heart/audio_on.svg' : 'https://files-cdn.pek3b.qingstor.com/heart/audio_off.svg'
 }
 
 function backgroundAudioSwitch(audio, needPlay) {
@@ -55,7 +55,7 @@ setTimeout(() => {
       const domMemory = document.getElementById('memory')
       domMemory.classList.remove(classDisplayNone)
       domMemory.style.opacity = '0'
-      domMemory.innerHTML = '<img class="pic pic1" src="img/01.jpg"><img class="pic pic2" src="img/02.jpg"><img class="pic pic3" src="img/03.jpg"><img class="pic pic4" src="img/04.jpg"><img class="pic pic5" src="img/05.jpg"><img class="pic pic6" src="img/06.jpg">'
+      domMemory.innerHTML = '<img class="pic pic1" src="https://files-cdn.pek3b.qingstor.com/heart/01.jpg"><img class="pic pic2" src="https://files-cdn.pek3b.qingstor.com/heart/02.jpg"><img class="pic pic3" src="https://files-cdn.pek3b.qingstor.com/heart/03.jpg"><img class="pic pic4" src="https://files-cdn.pek3b.qingstor.com/heart/04.jpg"><img class="pic pic5" src="https://files-cdn.pek3b.qingstor.com/heart/05.jpg"><img class="pic pic6" src="https://files-cdn.pek3b.qingstor.com/heart/06.jpg">'
       fadeIn(domMemory, 50)
     })
   })
