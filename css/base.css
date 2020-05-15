@@ -46,11 +46,11 @@ body {
 
 .heart-wrapper {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 
 li {
