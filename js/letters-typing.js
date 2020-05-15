@@ -38,6 +38,8 @@ class Typing {
   print(dom, val, callback) {
     setTimeout(function () {
       dom.appendChild(document.createTextNode(val))
+      let t = document.body.clientHeight;
+      window.scroll({top: t, left: 0, behavior: 'smooth'});
       callback()
     }, this.delay)
   }
