@@ -71,7 +71,7 @@ class Typing {
 }
 
 function typeLetters(domLetters, clickListener) {
-  const colors = ['color-deepskyblue', 'color-darksalmon', 'color-darkturquoise', 'color-deeppink', 'color-yellow']
+  const colors = ['color-deepskyblue', 'color-darksalmon', 'color-darkturquoise', 'color-pink', 'color-yellow']
   const contentArr =
       `我会守护你生命里的精彩，并陪伴你一路精彩下去。
       你的幸福快乐，是我一生的追求。
