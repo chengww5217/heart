@@ -108,6 +108,8 @@ function typeLetters(domLetters, clickListener) {
         this.output.appendChild(memoryReactivation)
         memoryReactivation.style.opacity = '0';
         fadeIn(memoryReactivation)
+        let t = document.body.clientHeight;
+        window.scroll({top: t, left: 0, behavior: 'smooth'});
         if (clickListener) memoryReactivation.onclick = clickListener
       }, 1500)
     }
