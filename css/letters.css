@@ -1,0 +1,51 @@
+#letters {
+  margin: 5vh 2.5vh 2.5vh;
+  padding: 5vh 2.5vh 2.5vh;
+  box-shadow: 2px 4px 6px #232323;
+}
+
+.letters-content {
+  width: 90vw;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.memory-reactivation {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: deepskyblue;
+  border: deepskyblue 1px solid;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 4.5vh 3vh;
+  cursor: pointer;
+}
+
+.memory-reactivation:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+.color-deepskyblue {
+  color: deepskyblue;
+}
+
+.color-darkturquoise {
+  color: darkturquoise;
+}
+
+.color-darksalmon {
+  color: darksalmon;
+}
+
+.color-deeppink {
+  color: deeppink;
+}
+
+.color-yellow {
+  color: yellow;
+}
+

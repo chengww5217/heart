@@ -1,0 +1,61 @@
+#memory {
+  width: 90vw;
+  margin: 15vh auto;
+  text-align: center;
+}
+
+.pic1 {
+  transform: rotate(-5deg);
+}
+
+.pic2 {
+  transform: rotate(-20deg);
+}
+
+.pic3 {
+  transform: rotate(5deg);
+}
+
+.pic4 {
+  transform: rotate(-10deg);
+}
+
+.pic5 {
+  transform: rotate(15deg);
+}
+
+.pic6 {
+  transform: rotate(10deg);
+}
+
+.pic7 {
+  transform: rotate(20deg);
+}
+
+.pic0 {
+  transform: rotate(-15deg);
+}
+
+
+#memory img {
+  padding: 10px 10px 15px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  max-height: 50vh;
+  max-width: 50vw;
+  height: auto;
+  width: auto;
+}
+
+#memory > img:hover {
+  position: relative;
+  box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+  transform: rotate(0deg) scale(1.5);
+  z-index: 1000;
+}
