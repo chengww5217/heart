@@ -30,7 +30,7 @@ let isPlaying = false
 audioSwitch.onclick = () => {
   isPlaying = !isPlaying
   backgroundAudioSwitch(audio, isPlaying)
-  audioSwitch.src = isPlaying ? './img/audio_on.svg' : './img/audio_off.svg'
+  audioSwitch.src = isPlaying ? 'https://qc-mobile.sh1a.qingstor.com/screenshot/audio_on.svg' : 'https://qc-mobile.sh1a.qingstor.com/screenshot/audio_off.svg'
 }
 
 function backgroundAudioSwitch(audio, needPlay) {
@@ -55,7 +55,7 @@ setTimeout(() => {
       const domMemory = document.getElementById('memory')
       domMemory.classList.remove(classDisplayNone)
       domMemory.style.opacity = '0'
-      domMemory.innerHTML = '<img class="pic pic1" src="../img/01.jpg"><img class="pic pic2" src="../img/02.jpg"><img class="pic pic3" src="../img/03.jpg"><img class="pic pic4" src="../img/04.jpg"><img class="pic pic5" src="../img/05.jpg"><img class="pic pic6" src="../img/06.jpg">'
+      domMemory.innerHTML = '<img class="pic pic1" src="https://qc-mobile.sh1a.qingstor.com/screenshot/01.jpg"><img class="pic pic2" src="https://qc-mobile.sh1a.qingstor.com/screenshot/02.jpg"><img class="pic pic3" src="https://qc-mobile.sh1a.qingstor.com/screenshot/03.jpg"><img class="pic pic4" src="https://qc-mobile.sh1a.qingstor.com/screenshot/04.jpg"><img class="pic pic5" src="../img/05.jpg"><img class="pic pic6" src="https://qc-mobile.sh1a.qingstor.com/screenshot/06.jpg">'
       fadeIn(domMemory, 50)
     })
   })
