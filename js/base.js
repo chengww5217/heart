@@ -30,7 +30,7 @@ let isPlaying = false
 audioSwitch.onclick = () => {
   isPlaying = !isPlaying
   backgroundAudioSwitch(audio, isPlaying)
-  audioSwitch.src = isPlaying ? 'https://qc-mobile.sh1a.qingstor.com/screenshot/audio_on.svg' : 'https://qc-mobile.sh1a.qingstor.com/screenshot/audio_off.svg'
+  audioSwitch.src = isPlaying ? './img/audio_on.svg' : './img/audio_off.svg'
 }
 
 function backgroundAudioSwitch(audio, needPlay) {
@@ -42,6 +42,7 @@ function backgroundAudioSwitch(audio, needPlay) {
 }
 
 const classDisplayNone = 'display-none'
+const baseUrl = 'https://mobile.sh1a.qingstor.com/file/heart'
 setTimeout(() => {
   const domHeartLoading = document.getElementById('heart-loading')
   domHeartLoading.classList.add(classDisplayNone)
@@ -55,7 +56,14 @@ setTimeout(() => {
       const domMemory = document.getElementById('memory')
       domMemory.classList.remove(classDisplayNone)
       domMemory.style.opacity = '0'
-      domMemory.innerHTML = '<img class="pic pic1" src="https://qc-mobile.sh1a.qingstor.com/screenshot/01.jpg"><img class="pic pic2" src="https://qc-mobile.sh1a.qingstor.com/screenshot/02.jpg"><img class="pic pic3" src="https://qc-mobile.sh1a.qingstor.com/screenshot/03.jpg"><img class="pic pic4" src="https://qc-mobile.sh1a.qingstor.com/screenshot/04.jpg"><img class="pic pic5" src="../img/05.jpg"><img class="pic pic6" src="https://qc-mobile.sh1a.qingstor.com/screenshot/06.jpg">'
+      domMemory.innerHTML = `
+      <img class="pic pic1" src="${baseUrl}/01.jpg" alt="pic1">
+      <img class="pic pic2" src="${baseUrl}/02.jpg" alt="pic2">
+      <img class="pic pic3" src="${baseUrl}/03.jpg" alt="pic3">
+      <img class="pic pic4" src="${baseUrl}/04.jpg" alt="pic4">
+      <img class="pic pic5" src="${baseUrl}/05.jpg" alt="pic5">
+      <img class="pic pic6" src="${baseUrl}/06.jpg" alt="pic6">
+`
       fadeIn(domMemory, 50)
     })
   })
